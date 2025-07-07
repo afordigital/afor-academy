@@ -1,1 +1,81 @@
 @import "tailwindcss";
+
+@theme {
+  --font-clash-display: "Clash Display", "sans-serif";
+  --font-poppins: "Poppins", "sans-serif";
+
+  --color-cs-purple: #a488ef;
+  --color-cs-blue: #88ceeb;
+  --color-cs-pink: #ffb3f0;
+  --color-cs-orange: #ff7a5c;
+  --color-cs-yellow: #f4d839;
+  --color-ps-gray: #e3e0f3;
+  --color-ps-geren: #dbf5f0;
+  --color-ps-orange: #ffc0ca;
+
+  --animate-spin: spin 2s ease-in-out;
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.rotate-animation {
+  transition: rotate 0.3s ease-in-out;
+  animation: rotate 2s ease forwards;
+}
+
+@keyframes rotate {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animated-svg {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.animated-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1.5s ease-in-out;
+  fill: none;
+}
+
+.animated-svg:hover .animated-path {
+  stroke-dashoffset: 1000;
+  transition: stroke-dashoffset 0.75s ease-in-out;
+}
+
+.animate-line .line {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: draw 2s ease forwards;
+}
+
+.animate-line .line:nth-of-type(1) {
+  animation-delay: 0s;
+}
+
+.animate-line .line:nth-of-type(2) {
+  animation-delay: 0.25s;
+}
+
+.animate-line .line:nth-of-type(3) {
+  animation-delay: 0.5s;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@font-face {
+  font-family: "Clash Display";
+  src: url("/fonts/ClashDisplay-Variable.woff2") format("woff2");
+}

@@ -1,11 +1,13 @@
 ---
-import Welcome from "../components/Welcome.astro";
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
+import Snake from "../assets/snake.svg";
+import Title from "../components/Title.astro";
 ---
 
 <Layout>
-  <h1 class="bg-green-500 text-7xl border-black rounded-md border-2">
-    Hola por favor funciona tailwind
-  </h1>
+  <Title />
+  <section class="absolute -right-12 top-[35%]">
+    <Snake />
+  </section>
 </Layout>
