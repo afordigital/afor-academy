@@ -36,19 +36,20 @@
   max-width: 100%;
   height: auto;
   cursor: pointer;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease;
 }
 
 .animated-path {
-  stroke-dasharray: 1000;
+  /* Longitud aproximada del path calculada */
+  stroke-dasharray: 2000;
   stroke-dashoffset: 0;
-  transition: stroke-dashoffset 1.5s ease-in-out;
+  transition: stroke-dashoffset 1s ease-in-out;
   fill: none;
 }
 
 .animated-svg:hover .animated-path {
-  stroke-dashoffset: 1000;
-  transition: stroke-dashoffset 0.75s ease-in-out;
+  stroke-dashoffset: -2000;
+  transition: stroke-dashoffset 1s ease-in-out;
 }
 
 .animate-line .line {

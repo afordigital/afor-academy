@@ -1,52 +1,137 @@
-# Astro Starter Kit: Basics
+<div align="center">
 
-```sh
-npm create astro@latest -- --template basics
+# Afor-Academy - Plataforma de Aprendizaje Web Neo-Brutalista
+
+![GitHub stars](https://img.shields.io/github/stars/afordigital/afor-academy?style=social) ![GitHub forks](https://img.shields.io/github/forks/afordigital/afor-academy?style=social) ![GitHub issues](https://img.shields.io/github/issues/afordigital/afor-academy) ![Contributors](https://img.shields.io/github/contributors/afordigital/afor-academy)
+
+**Afor-Academy** es una plataforma web con un diseño neo-brutalista, dedicada a la enseñanza de diseño y desarrollo web a otro nivel.
+
+[Reportar Bug](https://github.com/afordigital/afor-academy/issues)
+
+</div>
+
+## 📸 Vista Previa
+
+<!-- Cuando el archivo cover.jpg esté en el repositorio, esta imagen se mostrará -->
+
+![Afor Academy Preview](./cover.jpg)
+
+## 🚀 Acerca de Afor-Academy
+
+Afor-Academy es una plataforma de aprendizaje enfocada en tecnologías web modernas, con una estética neo-brutalista que busca romper con los diseños tradicionales. Nuestro objetivo es ofrecer contenido de alta calidad de una manera visualmente impactante y directa.
+
+### ✨ Características Principales
+
+- **🎨 Diseño Neo-Brutalista**: Una interfaz única, con tipografías fuertes, colores vibrantes y sin miedo a mostrar la estructura.
+- **📚 Cursos Interactivos**: Contenido educativo sobre diseño y desarrollo web (¡Próximamente!).
+- **🤖 Animaciones SVG**: Uso de animaciones para una experiencia más dinámica.
+- **⚡ Performance**: Construido con Astro para un rendimiento óptimo y carga rápida.
+
+## 📊 Arquitectura del Sistema (En Desarrollo)
+
+```mermaid
+graph TD
+    A[Usuario] --> B[Afor Academy - Astro]
+    B --> C[Páginas Estáticas HTML/CSS/JS]
+    B --> D[Componentes Astro]
+
+    style A fill:#a488ef,stroke:#333,stroke-width:2px,color:#fff
+    style B fill:#ff7a5c,stroke:#333,stroke-width:2px,color:#fff
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 📚 Tabla de Contenidos
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- [Afor-Academy - Plataforma de Aprendizaje Web Neo-Brutalista](#afor-academy---plataforma-de-aprendizaje-web-neo-brutalista)
+  - [📸 Vista Previa](#-vista-previa)
+  - [🚀 Acerca de Afor-Academy](#-acerca-de-afor-academy)
+    - [✨ Características Principales](#-características-principales)
+  - [📊 Arquitectura del Sistema (En Desarrollo)](#-arquitectura-del-sistema-en-desarrollo)
+  - [📚 Tabla de Contenidos](#-tabla-de-contenidos)
+  - [🚀 Comenzar](#-comenzar)
+    - [📋 Prerrequisitos](#-prerrequisitos)
+    - [⚡ Instalación Rápida](#-instalación-rápida)
+    - [📦 Construir para Producción](#-construir-para-producción)
+    - [🔍 Vista Previa de Producción](#-vista-previa-de-producción)
+  - [🤝 Contribuir](#-contribuir)
+  - [👥 Autores](#-autores)
+  - [🛠️ Stack Tecnológico](#️-stack-tecnológico)
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## 🚀 Comenzar
 
-## 🚀 Project Structure
+### 📋 Prerrequisitos
 
-Inside of your Astro project, you'll see the following folders and files:
+Asegúrate de tener instalado:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+- **Node.js** (versión 18 o superior)
+- **pnpm** (versión 10 o superior)
+
+### ⚡ Instalación Rápida
+
+1. **Clona o haz fork del repositorio**
+
+   ```bash
+   git clone https://github.com/afordigital/afor-academy.git
+   cd afor-academy
+   ```
+
+2. **Instala las dependencias**
+
+   ```bash
+   pnpm install
+   ```
+
+3. **Ejecuta el proyecto**
+
+   ```bash
+   pnpm dev
+   ```
+
+4. **Abre tu navegador y visita**
+
+   [http://localhost:4321](http://localhost:4321)
+
+### 📦 Construir para Producción
+
+Para crear una compilación lista para producción:
+
+```bash
+pnpm build
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+### 🔍 Vista Previa de Producción
 
-## 🧞 Commands
+Para previsualizar la compilación de producción localmente:
 
-All commands are run from the root of the project, from a terminal:
+```bash
+ pnpm preview
+```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 🤝 Contribuir
 
-## 👀 Want to learn more?
+Si quieres contribuir a este proyecto, puedes hacerlo leyendo nuestra [Guía de Contribución](./CONTRIBUTING.md).
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+
+## 👥 Autores
+
+<a href="https://github.com/afordigital">
+   <img width="50px" src="https://avatars.githubusercontent.com/u/43246362?v=4" />
+</a>
+
+**¡Gracias a todos los colaboradores que han hecho posible este proyecto!**
+
+[![Contributors](https://contrib.rocks/image?repo=afordigital/afor-academy)](https://github.com/afordigital/afor-academy/graphs/contributors)
+
+## 🛠️ Stack Tecnológico
+
+![Astro](https://img.shields.io/badge/Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+
+### 🔧 Tecnologías Principales
+
+- **Framework**: Astro
+- **Styling**: TailwindCSS
+- **Build Tool**: Vite
+
+---
+
+Hecho con ❤️ por [comuafor 🐀](https://discord.com/invite/comuafor)
