@@ -1,18 +1,26 @@
 ---
 import DesignLines from "../assets/designLines.svg";
 import Asterisk from "../assets/asterisk.svg";
+import Highlight from "../assets/highlight.svg";
 ---
 
 <h1 class="text-7xl relative text-center leading-[120%]">
-  Aprende&nbsp;<span class="bg-cs-blue inline px-2 relative"
-    >diseño<span class="absolute -top-6 -right-8 animate-line"
-      ><DesignLines /></span
-    >
-  </span>&nbsp;y <br /><span class="bg-cs-orange inline text-white">
-    &nbspdesarrollo web
+  Aprende&nbsp;
+  <span class="bg-cs-blue inline px-2 relative">
+    diseño
+    <span class="absolute -top-6 -right-8 animate-line">
+      <DesignLines />
+    </span>
+  </span>
+  &nbsp;y <br />
+  <span class="bg-cs-orange relative inline text-white">
+    &nbsp;desarrollo web
+    <span class="absolute -bottom-14 right-0 animate-highlight">
+      <Highlight />
+    </span>
   </span>
   &nbsp;a otro nivel
-  <span class="absolute -bottom-16 -left-16 hover:animate-spin"
-    ><Asterisk /></span
-  >
+  <span class="absolute -bottom-16 left-[12%] hover:animate-spin">
+    <Asterisk />
+  </span>
 </h1>

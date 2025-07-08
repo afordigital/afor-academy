@@ -3,11 +3,19 @@ import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
 import Snake from "../assets/snake.svg";
 import Title from "../components/Title.astro";
+import Spring from "../assets/spring.svg";
+import Courses from "../components/Courses.astro";
 ---
 
 <Layout>
+  <span class="absolute top-0 left-10">
+    <Spring />
+  </span>
   <Title />
   <section class="absolute -right-12 top-[35%]">
     <Snake />
   </section>
+  <main class="w-full max-w-4xl mt-24 mx-auto items-start flex flex-col">
+    <Courses />
+  </main>
 </Layout>

@@ -1,0 +1,21 @@
+---
+import Course from "./common/Course.astro";
+import courses from "../config/courses.json";
+
+type Course = {
+  id: number;
+  title: string;
+  level: number;
+};
+---
+
+<section class="w-full flex flex-col">
+  <h2>Mis cursos</h2>
+  <article>
+    {
+      courses.map((course: Course) => {
+        return <Course title={course.title} level={course.level} />;
+      })
+    }
+  </article>
+</section>

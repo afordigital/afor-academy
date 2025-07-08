@@ -21,6 +21,13 @@
   }
 }
 
+@layer base {
+  h2 {
+    font-size: 44px;
+    font-weight: 700;
+  }
+}
+
 .rotate-animation {
   transition: rotate 0.3s ease-in-out;
   animation: rotate 2s ease forwards;
@@ -40,11 +47,16 @@
 }
 
 .animated-path {
-  /* Longitud aproximada del path calculada */
   stroke-dasharray: 2000;
   stroke-dashoffset: 0;
   transition: stroke-dashoffset 1s ease-in-out;
   fill: none;
+}
+
+.animate-highlight .highlight {
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  animation: draw 1.5s ease forwards;
 }
 
 .animated-svg:hover .animated-path {
@@ -79,4 +91,31 @@
 @font-face {
   font-family: "Clash Display";
   src: url("/fonts/ClashDisplay-Variable.woff2") format("woff2");
+}
+
+.spring {
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.spring:hover {
+  animation: bounce 0.6s ease-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.1, 0.9);
+  }
+  50% {
+    transform: scale(0.95, 1.05);
+  }
+  70% {
+    transform: scale(1.02, 0.98);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
