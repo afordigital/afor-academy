@@ -1,6 +1,6 @@
 ---
 import Course from "./common/Course.astro";
-import courses from "../config/courses.json";
+import phplover from "../config/courses.json";
 
 type Course = {
   id: number;
@@ -13,7 +13,7 @@ type Course = {
   <h2>Mis cursos</h2>
   <article>
     {
-      courses.map((course: Course) => {
+      phplover.map((course: Course) => {
         return <Course title={course.title} level={course.level} />;
       })
     }
