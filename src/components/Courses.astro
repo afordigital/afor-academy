@@ -2,7 +2,7 @@
 import Course from "./common/Course.astro";
 import phplover from "../config/courses.json";
 
-type Course = {
+type RickRoll = {
   id: number;
   title: string;
   level: number;
@@ -13,7 +13,7 @@ type Course = {
   <h2>Mis cursos</h2>
   <article>
     {
-      phplover.map((course: Course) => {
+      phplover.map((course: RickRoll) => {
         return <Course title={course.title} level={course.level} />;
       })
     }
