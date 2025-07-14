@@ -4,6 +4,7 @@ import phplover from "../config/courses.json";
 
 type RickRoll = {
   id: number;
+  img: string;
   title: string;
   level: number;
 };
@@ -14,7 +15,7 @@ type RickRoll = {
   <article>
     {
       phplover.map((course: RickRoll) => {
-        return <Course title={course.title} level={course.level} />;
+        return <Course key={course.id} title={course.title} img={course.img} />;
       })
     }
   </article>

@@ -1,0 +1,14 @@
+---
+type Props = {
+  href: string;
+  text: string;
+};
+const { href, text } = Astro.props;
+---
+
+<a
+  href={href}
+  target="_blank"
+  class="bg-ps-geren hover:shadow-none transform hover:translate-x-14 text-xl h-fit px-6 py-2.5 rounded-2xl border-3 shadow-[3px_3px_0_rgba(0,0,0,1)]"
+  >{text}</a
+>

@@ -1,7 +1,40 @@
 ---
-const { title, level } = Astro.props;
+import Link from "./Link.astro";
+
+type Props = {
+  id: number;
+  img: string;
+  title: string;
+  level: number;
+};
+
+const { title, img } = Astro.props;
 ---
 
-<article>
-  {title}, {level}
+<article
+  class="grid grid-cols-[auto_1fr] gap-6 shadow-[4px_4px_0_rgba(0,0,0,1)] border-3 bg-cs-pink px-6 py-10 rounded-2xl"
+>
+  <img
+    src={img}
+    alt={`${title} cover`}
+    width="294"
+    height="164.5"
+    class="rounded-xl"
+  />
+  <div class="flex flex-col justify-between">
+    <div class="flex flex-col gap-2">
+      <div class="bg-cs-yellow tracking-wide w-fit px-4 rounded-full border-3">
+        Principiante
+      </div>
+      <h1 class="text-4xl">
+        {title}
+      </h1>
+    </div>
+    <div class="w-fit mb-2">
+      <Link
+        href="https://www.youtube.com/watch?v=VdS9ZGHHXWQ"
+        text="Ver curso"
+      />
+    </div>
+  </div>
 </article>
