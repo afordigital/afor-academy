@@ -7,8 +7,9 @@
   --color-cs-purple: #a488ef;
   --color-cs-blue: #88ceeb;
   --color-cs-pink: #ffb3f0;
-  --color-cs-orange: #ff7a5c;
+  --color-cs-orange: #fe5b48;
   --color-cs-yellow: #f4d839;
+  --color-cs-active: #ff68b5;
   --color-ps-gray: #e3e0f3;
   --color-ps-geren: #dbf5f0;
   --color-ps-orange: #ffc0ca;
@@ -92,5 +93,3 @@
   font-family: "Clash Display";
   src: url("/fonts/ClashDisplay-Variable.woff2") format("woff2");
 }
-
-

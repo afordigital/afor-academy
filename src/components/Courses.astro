@@ -1,22 +1,85 @@
 ---
 import Course from "./common/Course.astro";
-import phplover from "../config/courses.json";
+import courses from "../config/courses.json";
+import Tag from "./common/Tag.astro";
+
+const filters = courses.map((course) => course.label);
 
 type RickRoll = {
   id: number;
   img: string;
+  label: string;
   title: string;
   level: number;
 };
 ---
 
-<section class="w-full flex flex-col">
+<section class="w-full flex flex-col gap-4">
   <h2>Mis cursos</h2>
-  <article>
+
+  <article class="flex items-center gap-2">
+    <Tag
+      id="all"
+      styles="filter border-3 cursor-pointer bg-cs-active px-6 py-1 text-xl text-black w-fit rounded-full shadow-[3px_2px_0_rgba(0,0,0,1)]"
+    >
+      {`Todos (${filters.length})`}
+    </Tag>
     {
-      phplover.map((course: RickRoll) => {
-        return <Course key={course.id} title={course.title} img={course.img} />;
+      filters.map((filter) => {
+        return (
+          <Tag
+            id={filter}
+            styles="filter border-3 cursor-pointer px-6 py-1 text-xl text-black bg-white w-fit rounded-full shadow-[3px_2px_0_rgba(0,0,0,1)]"
+          >
+            {filter}
+          </Tag>
+        );
+      })
+    }
+  </article>
+
+  <article class="flex flex-col gap-4">
+    {
+      courses.map((course: RickRoll) => {
+        return (
+          <Course
+            id={course.id}
+            title={course.title}
+            label={course.label}
+            img={course.img}
+            level={course.level}
+          />
+        );
       })
     }
   </article>
 </section>
+
+<script>
+  let activeFilter = document.querySelector("#all");
+
+  const filters = document.querySelectorAll(".filter");
+
+  filters.forEach((filter) => {
+    filter.addEventListener("click", () => {
+      activeFilter = filter;
+      filters.forEach((filter) => {
+        filter.style.backgroundColor = "#fff";
+      });
+      activeFilter.style.backgroundColor = "#ff68b5";
+      filterCourses(activeFilter.id);
+    });
+  });
+
+  const filterCourses = (filter) => {
+    const courses = document.querySelectorAll(".course");
+
+    courses.forEach((course) => {
+      if (course.classList.contains(filter) || filter === "all") {
+        course.style.display = "block";
+      } else {
+        course.style.display = "none";
+      }
+    });
+  };
+</script>

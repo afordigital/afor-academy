@@ -1,0 +1,21 @@
+---
+import pills from "../config/pills.json";
+import Pill from "./common/Pill.astro";
+---
+
+<section class="w-full flex flex-col gap-4">
+  <h2>Píldoras educativas</h2>
+  <article class="flex flex-col gap-8">
+    {
+      pills.map((pill) => (
+        <Pill
+          id={pill.id}
+          title={pill.title}
+          img={pill.img}
+          label={pill.label}
+          level={pill.level}
+        />
+      ))
+    }
+  </article>
+</section>

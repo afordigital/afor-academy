@@ -1,11 +1,12 @@
 ---
 type Props = {
-  text: string;
+  id: string;
+  styles: string;
 };
 
-const { text } = Astro.props;
+const { id, styles } = Astro.props;
 ---
 
-<div>
-  {text}
+<div id={id} class={styles}>
+  <slot />
 </div>

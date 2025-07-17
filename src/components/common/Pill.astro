@@ -12,9 +12,7 @@ type Props = {
 const { id, title, img, label, level } = Astro.props;
 ---
 
-<article
-  class=`grid course ${label} grid-cols-[auto_1fr] gap-6 shadow-[4px_4px_0_rgba(0,0,0,1)] border-3 bg-cs-pink px-6 py-8 rounded-2xl`
->
+<article class=`grid course ${label} grid-cols-[auto_1fr] gap-6  rounded-2xl`>
   <img
     src={img}
     alt={`${title} cover`}
@@ -24,9 +22,10 @@ const { id, title, img, label, level } = Astro.props;
   />
   <div class="flex flex-col justify-between">
     <div class="flex flex-col gap-2">
-      <div class="bg-cs-yellow tracking-wide w-fit px-4 rounded-full border-3">
-        Principiante
-      </div>
+      {label}
+    </div>
+    <hr class="w-[100px] h-[40px]" />
+    <div class="flex flex-col gap-2">
       <h1 class="text-3xl">
         {title}
       </h1>

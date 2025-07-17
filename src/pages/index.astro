@@ -5,6 +5,7 @@ import Snake from "../assets/snake.svg";
 import Title from "../components/Title.astro";
 import Courses from "../components/Courses.astro";
 import SpringHamster from "../components/common/SpringHamster.astro";
+import Pills from "../components/Pills.astro";
 ---
 
 <Layout>
@@ -15,7 +16,8 @@ import SpringHamster from "../components/common/SpringHamster.astro";
   <section class="absolute -right-12 top-[35%]">
     <Snake />
   </section>
-  <main class="w-full max-w-6xl mt-24 mx-auto items-start flex flex-col">
+  <main class="w-full max-w-6xl mt-24 mx-auto items-start flex flex-col gap-14">
     <Courses />
+    <Pills />
   </main>
 </Layout>

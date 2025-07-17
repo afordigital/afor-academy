@@ -1,0 +1,16 @@
+[
+  {
+    "id": 0,
+    "img": "https://img.youtube.com/vi/qilWcNKAM2o/maxresdefault.jpg",
+    "title": "BASTA de usar useEffects para TODO",
+    "label": "React",
+    "level": 0
+  },
+  {
+    "id": 1,
+    "img": "https://img.youtube.com/vi/xIoGQn6I9nQ/maxresdefault.jpg",
+    "title": "Flex vs Grid: Cuál deberías usar y cuándo",
+    "label": "CSS",
+    "level": 0
+  }
+]

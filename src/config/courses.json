@@ -3,6 +3,14 @@
     "id": 0,
     "img": "https://img.youtube.com/vi/VdS9ZGHHXWQ/maxresdefault.jpg",
     "title": "Curso de FIGMA 2025 desde cero",
+    "label": "Figma",
+    "level": 0
+  },
+  {
+    "id": 1,
+    "img": "/imgs/accessibility.webp",
+    "title": "Curso de Accesibilidad Web para desarrolladores",
+    "label": "Accesibilidad",
     "level": 0
   }
 ]
