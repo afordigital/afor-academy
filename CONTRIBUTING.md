@@ -1,4 +1,4 @@
-# Contribuir a Hambot Brand Generator
+# Contribuir a Afor-Academy
 
 ¡Gracias por tu interés en contribuir! Para asegurar una colaboración fluida y eficiente, por favor sigue estas pautas.
 
@@ -19,7 +19,7 @@
 
 1. **Explora el Proyecto**: Revisa el [README](./README.md), la estructura y el código para entender el proyecto.
 2. **Revisa Issues Abiertos**: Visita la [sección de Issues](https://github.com/afordigital/brand-generator/issues) para ver cómo puedes ayudar, o abre un nuevo issue para sugerir una característica o reportar un bug.
-3. **Fork y clona**: Haz fork del repositorio y clónalo en tu máquina local.
+3. **Fork y clona**: Haz un fork del repositorio y clónalo en tu máquina local.
 
 ## 📋 Código de Conducta
 
@@ -57,15 +57,15 @@ Para proponer una nueva característica:
 
 ## 🍴 Cómo Hacer Fork
 
-Para contribuir a Hambot Brand Generator, primero necesitas hacer fork del repositorio:
+Para contribuir a Afor-Academy, primero necesitas hacer fork del repositorio:
 
-1. **Ve al Repositorio en GitHub**: Visita [Hambot Brand Generator](https://github.com/afordigital/brand-generator).
+1. **Ve al Repositorio en GitHub**: Visita [Afor-Academy](https://github.com/afordigital/afor-academy).
 2. **Haz Click en Fork**: En la esquina superior derecha de la página del repositorio, haz click en el botón **Fork**. Esto crea una copia del repositorio en tu cuenta de GitHub.
 3. **Clona tu Fork**: Abre una terminal en tu máquina local y ejecuta el siguiente comando para clonar tu fork:
 
 ```bash
-git clone https://github.com/TU_USUARIO/brand-generator.git
-cd brand-generator
+git clone https://github.com/TU_USUARIO/afor-academy.git
+cd afor-academy
 ```
 
 4. **Instala las Dependencias**: Instala las dependencias del proyecto:
@@ -206,23 +206,27 @@ Para asegurar que tu issue sea manejado eficientemente:
 ## 🚀 Áreas donde Puedes Contribuir
 
 ### Frontend (React + TypeScript)
+
 - Mejoras en la interfaz de usuario de Hambot
 - Nuevos componentes de vista previa para paletas
 - Optimizaciones de rendimiento
 - Mejoras en la experiencia de usuario del chat
 
 ### Integración de IA
+
 - Mejoras en los prompts para generar mejores paletas
 - Nuevas funcionalidades de generación de marca
 - Optimización de respuestas del chatbot
 
 ### Documentación
+
 - Mejoras en el README
 - Documentación de componentes
 - Guías de usuario
 - Tutoriales y ejemplos
 
 ### Testing
+
 - Tests unitarios para componentes
 - Tests de integración
 - Tests end-to-end
@@ -231,4 +235,4 @@ Para asegurar que tu issue sea manejado eficientemente:
 
 ¡Gracias por tu interés y contribución a Hambot Brand Generator! ¡Tu ayuda es muy valiosa! 🎨
 
-Para cualquier pregunta, no dudes en unirte a nuestra comunidad en [Discord](https://discord.com/invite/comuafor) 🐀 
+Para cualquier pregunta, no dudes en unirte a nuestra comunidad en [Discord](https://discord.com/invite/comuafor) 🐀
