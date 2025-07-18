@@ -56,30 +56,32 @@ type RickRoll = {
 </section>
 
 <script>
-  let activeFilter = document.querySelector("#all");
+ let activeFilter = document.querySelector<HTMLElement>("#all");
 
-  const filters = document.querySelectorAll(".filter");
+  const filters = document.querySelectorAll<HTMLElement>(".filter");
 
   filters.forEach((filter) => {
     filter.addEventListener("click", () => {
       activeFilter = filter;
-      filters.forEach((filter) => {
-        filter.style.backgroundColor = "#fff";
+
+      filters.forEach((f) => {
+        f.style.backgroundColor = "#fff";
       });
-      activeFilter.style.backgroundColor = "#ff68b5";
-      filterCourses(activeFilter.id);
+
+      activeFilter!.style.backgroundColor = "#ff68b5";
+      filterCourses(activeFilter!.id);
     });
   });
 
-  const filterCourses = (filter) => {
-    const courses = document.querySelectorAll(".course");
+  const filterCourses = (filter: string) => {
+  const courses = document.querySelectorAll<HTMLElement>(".course");
 
-    courses.forEach((course) => {
-      if (course.classList.contains(filter) || filter === "all") {
-        course.style.display = "block";
-      } else {
-        course.style.display = "none";
-      }
-    });
-  };
+  courses.forEach((course) => {
+    if (course.classList.contains(filter) || filter === "all") {
+      course.classList.remove("hidden");
+    } else {
+      course.classList.add("hidden");
+    }
+  });
+};
 </script>
