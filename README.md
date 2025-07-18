@@ -27,16 +27,43 @@ Afor-Academy es una plataforma de aprendizaje enfocada en tecnologías web moder
 - **🤖 Animaciones SVG**: Uso de animaciones para una experiencia más dinámica.
 - **⚡ Performance**: Construido con Astro para un rendimiento óptimo y carga rápida.
 
-## 📊 Arquitectura del Sistema (En Desarrollo)
+## 📊 Arquitectura del Proyecto
 
 ```mermaid
 graph TD
-    A[Usuario] --> B[Afor Academy - Astro]
-    B --> C[Páginas Estáticas HTML/CSS/JS]
-    B --> D[Componentes Astro]
+    subgraph "Usuario Final"
+        A[Visitante]
+    end
+
+    subgraph "Build & Despliegue (Astro)"
+        C(Afor Academy - Código Fuente)
+        C --> D["Páginas y Rutas<br/>/src/pages"]
+        C --> E["Layouts<br/>/src/layouts"]
+        C --> F["Componentes<br/>/src/components"]
+        C --> G["Contenido (Cursos)<br/>/src/content"]
+        C --> H["Assets Estáticos<br/>/public"]
+    end
+
+    subgraph "Producción (Hosting)"
+        B["Sitio Web Estático<br/>HTML, CSS, JS"]
+    end
+
+    A --> B
+    C -- Proceso de Build --> B
+
+    D -- Utiliza --> E
+    D -- Utiliza --> F
+    F -- Puede contener --> F
+    D -- Renderiza --> G
 
     style A fill:#a488ef,stroke:#333,stroke-width:2px,color:#fff
-    style B fill:#ff7a5c,stroke:#333,stroke-width:2px,color:#fff
+    style B fill:#89dceb,stroke:#333,stroke-width:2px,color:#1e1e2e
+    style C fill:#ff7a5c,stroke:#333,stroke-width:2px,color:#fff
+    style D fill:#fab387,stroke:#333,stroke-width:2px,color:#1e1e2e
+    style E fill:#fab387,stroke:#333,stroke-width:2px,color:#1e1e2e
+    style F fill:#fab387,stroke:#333,stroke-width:2px,color:#1e1e2e
+    style G fill:#fab387,stroke:#333,stroke-width:2px,color:#1e1e2e
+    style H fill:#fab387,stroke:#333,stroke-width:2px,color:#1e1e2e
 ```
 
 ## 📚 Tabla de Contenidos
