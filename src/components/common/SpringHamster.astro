@@ -149,8 +149,8 @@
 </style>
 
 <script>
-  const hamtafor = document.querySelector(".hamtafor");
-  const spring = document.querySelector(".spring");
+  const hamtafor = document.querySelector<SVGSVGElement>(".hamtafor")!;
+  const spring = document.querySelector<SVGSVGElement>(".spring")!;
 
   let dragging = false;
   let startY = 0;
@@ -159,13 +159,13 @@
   let currentY = baseY;
   let deltaY = 0;
 
-  function startDrag(y) {
+  function startDrag(y: number) {
     dragging = true;
     startY = y;
     hamtafor.style.cursor = "grabbing";
   }
 
-  function moveDrag(y) {
+  function moveDrag(y: number) {
     if (!dragging) return;
 
     deltaY = y - startY;

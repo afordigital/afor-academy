@@ -2,7 +2,7 @@
   class="animated-svg"
   width="100%"
   height="auto"
-  viewBox="0 0 440 250"
+  viewBox="0 0 425 234"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
@@ -20,8 +20,8 @@
       id="filter0_d_20_40"
       x="0.451416"
       y="0.667969"
-      width="424.7"
-      height="233.6"
+      width="425"
+      height="234"
       filterUnits="userSpaceOnUse"
       color-interpolation-filters="sRGB"
     >
